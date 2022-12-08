@@ -16,218 +16,220 @@
 
 /* -------------------- TAMPILAN MOBILE <576 PX --------------------*/
 
-.halaman1{
-  z-index: 1;
-  background-color: #222222;
-  height: 100vh;
-  /* margin: 10px; */
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+@media screen and (max-width: 576px) {
+    .halaman1{
+      z-index: 1;
+      background-color: #222222;
+      height: 100vh;
+      /* margin: 10px; */
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-/* -------------------- KONTEN 1
--------------------- */
-.konten1 , .konten2{
-  position: relative;
-  /* border: 2px solid white; */
-  width: 50%;
-  height: 50%;
-  display: flex;
-}
+    /* -------------------- KONTEN 1
+    -------------------- */
+    .konten1 , .konten2{
+      position: relative;
+      /* border: 2px solid white; */
+      width: 50%;
+      height: 50%;
+      display: flex;
+    }
 
-.konten1{
-  flex-direction: column;
-  justify-content: center;
-}
+    .konten1{
+      flex-direction: column;
+      justify-content: center;
+    }
 
-.konten2{
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
+    .konten2{
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
 
-.konten1 h2:first-child, p:last-child{
-  margin: 2px 20px;
-  position: relative;
-  /* border: 2px solid white; */
-}
+    .konten1 h2:first-child, p:last-child{
+      margin: 2px 20px;
+      position: relative;
+      /* border: 2px solid white; */
+    }
 
-.konten1 h2:first-child::after{
-  content: 'folio';
-  color: #E42222;
-}
+    .konten1 h2:first-child::after{
+      content: 'folio';
+      color: #E42222;
+    }
 
-.konten1 p:last-child{
-  text-align: left;
-}
+    .konten1 p:last-child{
+      text-align: left;
+    }
 
-.konten2 div:first-child{
-  width: 150px;
-  height: 500px;
-  border-radius: 90px;
-  transform: translate(0px, -80px);
-  background-color: #E9E9E9;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    .konten2 div:first-child{
+      width: 150px;
+      height: 500px;
+      border-radius: 90px;
+      transform: translate(0px, -80px);
+      background-color: #E9E9E9;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.konten2 div:first-child .gambar{
-  width: 220px;
-  transition: all .5s;
-}
+    .konten2 div:first-child .gambar{
+      width: 220px;
+      transition: all .5s;
+    }
 
-.konten2:hover div:first-child .gambar{
-  scale: 2;
-  animation: none;
-  filter: blur(4px);
-}
-.konten2 div:first-child::before{
-  content: 'Hold here!';
-  border-radius: 70px;
-  color: #222222;
-  font-size: 12px;
-  text-align: center;
-  font-weight: bold;
-  bottom: -110px;
-  width: 140px;
-  height: 200px;
-  position: absolute;
-  transition: all .5s;
-}
-.konten2:hover div:first-child::before{
-  left: 160px;
-}
+    .konten2:hover div:first-child .gambar{
+      scale: 2;
+      animation: none;
+      filter: blur(4px);
+    }
+    .konten2 div:first-child::before{
+      content: 'Hold here!';
+      border-radius: 70px;
+      color: #222222;
+      font-size: 12px;
+      text-align: center;
+      font-weight: bold;
+      bottom: -110px;
+      width: 140px;
+      height: 200px;
+      position: absolute;
+      transition: all .5s;
+    }
+    .konten2:hover div:first-child::before{
+      left: 160px;
+    }
 
-.konten2 div:first-child::after{
-  content: '"Skills become problem solving"';
-  font-style: italic;
-  color: #222222;
-  width: 140px;
-  font-weight: bold;
-  text-align: center;
-  font-size: 12px;
-  height: 200px;
-  bottom: -110px;
-  left: -150px;
-  position: absolute;
-  transition: all 0.5s;
-}
+    .konten2 div:first-child::after{
+      content: '"Skills become problem solving"';
+      font-style: italic;
+      color: #222222;
+      width: 140px;
+      font-weight: bold;
+      text-align: center;
+      font-size: 12px;
+      height: 200px;
+      bottom: -110px;
+      left: -150px;
+      position: absolute;
+      transition: all 0.5s;
+    }
 
-.konten2:hover div:first-child::after, div:first-child::before{
-  left: 5px;
-}
+    .konten2:hover div:first-child::after, div:first-child::before{
+      left: 5px;
+    }
 
-.konten2 div:nth-child(2){
-  transform: translate(0px, -280px);
-  margin:0px 15px;
-  width: 80px;
-  height: 500px;
-  border-radius: 90px;
-  background-color: #E9E9E9;
-}
-.konten2 div:last-child{
-  transform: translate(0px, -280px);
-  margin: 15px;
-  width: 80px;
-  height: 183px;
-  border-radius: 90px;
-  background-color: #E9E9E9;
-}
+    .konten2 div:nth-child(2){
+      transform: translate(0px, -280px);
+      margin:0px 15px;
+      width: 80px;
+      height: 500px;
+      border-radius: 90px;
+      background-color: #E9E9E9;
+    }
+    .konten2 div:last-child{
+      transform: translate(0px, -280px);
+      margin: 15px;
+      width: 80px;
+      height: 183px;
+      border-radius: 90px;
+      background-color: #E9E9E9;
+    }
 
-.konten3{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 140px auto;
-}
+    .konten3{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 140px auto;
+    }
 
-.konten3 h1{
-  margin: 14px;
-}
+    .konten3 h1{
+      margin: 14px;
+    }
 
-.text h1 a{
-  font-size: 20px;
-  background-color: #E42222;
-  padding: 10px;
-  border-radius:50px;
-}
+    .text h1 a{
+      font-size: 20px;
+      background-color: #E42222;
+      padding: 10px;
+      border-radius:50px;
+    }
 
-.text h1 a .fa-solid{
-  margin-left: 10px;
-}
+    .text h1 a .fa-solid{
+      margin-left: 10px;
+    }
 
-.sosmed a i{
-  margin: 20px 6px;
-  font-size: 27px;
-  color: #E9E9E9;
-  transition: all 0.5s;
-}
+    .sosmed a i{
+      margin: 20px 6px;
+      font-size: 27px;
+      color: #E9E9E9;
+      transition: all 0.5s;
+    }
 
-.sosmed a i:hover {
-  transform: translatey(30%);
-  color: #E42222;
-}
-/* ANIMASI GAMBAR - KONTEN 2 */
-.konten2 div:first-child .gambar {
-  -webkit-animation: mover 1s infinite  alternate;
-  animation: mover 1s infinite  alternate;
-}
-.konten2 div:first-child .gambar {
-  -webkit-animation: mover 1s infinite  alternate;
-  animation: mover 1s infinite  alternate;
-}
-@-webkit-keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-5px); }
-}
-@keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-5px); }
-}
+    .sosmed a i:hover {
+      transform: translatey(30%);
+      color: #E42222;
+    }
+    /* ANIMASI GAMBAR - KONTEN 2 */
+    .konten2 div:first-child .gambar {
+      -webkit-animation: mover 1s infinite  alternate;
+      animation: mover 1s infinite  alternate;
+    }
+    .konten2 div:first-child .gambar {
+      -webkit-animation: mover 1s infinite  alternate;
+      animation: mover 1s infinite  alternate;
+    }
+    @-webkit-keyframes mover {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-5px); }
+    }
+    @keyframes mover {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-5px); }
+    }
 
-/* ANIMASI SCROLL DOWN */
-.konten3 .text h1 {
-  -webkit-animation: mover 1s infinite  alternate;
-  animation: mover 1s infinite  alternate;
-}
-.konten3 .text h1 {
-  -webkit-animation: mover 1s infinite  alternate;
-  animation: mover 1s infinite  alternate;
-}
-@-webkit-keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-5px); }
-}
-@keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-5px); }
-}
-/* -------------------- NAVBAR
--------------------- */
+    /* ANIMASI SCROLL DOWN */
+    .konten3 .text h1 {
+      -webkit-animation: mover 1s infinite  alternate;
+      animation: mover 1s infinite  alternate;
+    }
+    .konten3 .text h1 {
+      -webkit-animation: mover 1s infinite  alternate;
+      animation: mover 1s infinite  alternate;
+    }
+    @-webkit-keyframes mover {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-5px); }
+    }
+    @keyframes mover {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-5px); }
+    }
+    /* -------------------- NAVBAR
+    -------------------- */
 
-.navbar{
-    position: fixed;
-    background-color: #222222;
-    bottom: 0;
-    width: 99%;
-    height: 100px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 40px;
-}
+    .navbar{
+        position: fixed;
+        background-color: #222222;
+        bottom: 0;
+        width: 99%;
+        height: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 40px;
+    }
 
-.navbar a{
-    color: rgb(234, 234, 234);
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
+    .navbar a{
+        color: rgb(234, 234, 234);
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
 
-.halaman2{
-  height: 100vh;
+    .halaman2{
+      height: 100vh;
+    }
 }
